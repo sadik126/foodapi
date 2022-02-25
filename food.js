@@ -50,6 +50,7 @@ const loadmeal= detail => {
 const displaymeal = meal => {
     console.log(meal);
     let mealdetail = document.getElementById('mealdetail');
+    mealdetail.textContent = '';
     let div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = ` <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
